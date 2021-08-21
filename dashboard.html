@@ -277,18 +277,13 @@
                                                     <div class="tabs-wrp brd-rd5">
                                                         <h4 itemprop="headline">MY Orders</h4>
                                                         <div class="select-wrap-inner">
-                                                            <div class="select-wrp2">
+                                                            <div class="select-wrp2" style="float:right;">
                                                                 <select>
-                                                                    <option>Select Booking Status</option>
-                                                                    <option>Select Booking Status</option>
-                                                                    <option>Select Booking Status</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="select-wrp2">
-                                                                <select>
-                                                                    <option>Select Date Range</option>
-                                                                    <option>Select Date Range</option>
-                                                                    <option>Select Date Range</option>
+                                                                    <option>All status</option>
+                                                                    <option>Pending orders</option>
+                                                                    <option>On delivery orders</option>
+                                                                    <option>Delivered orders</option>
+                                                                    <option>Rejected orders</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -317,7 +312,7 @@
                                                                         <td rowspan="2">20:40 - Aug 17,2017</td>
                                                                         <td rowspan="2">Restaurant Name</td>
                                                                         <td rowspan="2"><span
-                                                                                class="brd-rd3 processing">ON DELIVERY</span>
+                                                                                class="brd-rd3 processing">pending</span>
                                                                             <a class="detail-link brd-rd50" href="cancel-order.html"
                                                                                 title="Order Detail" itemprop="url"><i
                                                                                     class="fa fa-chain"></i></a></td>
@@ -342,7 +337,7 @@
                                                                         <td>Aug 17,2017</td>
                                                                         <td>Restaurant Name</td>
                                                                         <td>
-                                                                            <span class="brd-rd3 completed">DELIVERED</span>
+                                                                            <span class="brd-rd3 on-delivery">on delivery</span>
                                                                                 <a class="detail-link brd-rd50" href="cancel-order.html"
                                                                                 title="Order Detail" itemprop="url"><i
                                                                                     class="fa fa-chain"></i></a>
@@ -407,20 +402,13 @@
                                                                 <div class="total-block">
                                                                     <table>
                                                                         <tr>
-                                                                            <th>Subtotal : </th>
-                                                                            <td>$30.00</td>
-                                                                        
-                                                                        </tr>
-                                                                        <tr>
                                                                             <th>Total : </th>
                                                                             <td>$30.00</td>
                                                                         
                                                                         </tr>
-                                                                        <tr>
-                                                                            <td><a href="#" class="red-bg brd-rd4" id="place-order">Place Order</a></td>
-                                                                            <td><a href="#" class="brd-rd4" id="remove-all">Remove All</a></td>
-                                                                        </tr>
                                                                     </table>
+                                                                    <a href="place-order.html" class="red-bg brd-rd4 place-order">Place Order</a>
+                                                                    <a href="#" class="brd-rd4 remove-all">Remove All</a>
                                                                 </div>
                                                             </div>
                                                             <div class="row restaurant-products">
@@ -480,20 +468,13 @@
                                                                 <div class="total-block">
                                                                     <table>
                                                                         <tr>
-                                                                            <th>Subtotal : </th>
-                                                                            <td>$30.00</td>
-                                                                        
-                                                                        </tr>
-                                                                        <tr>
                                                                             <th>Total : </th>
                                                                             <td>$30.00</td>
                                                                         
                                                                         </tr>
-                                                                        <tr>
-                                                                            <td><a href="#" class="red-bg brd-rd4" id="place-order">Place Order</a></td>
-                                                                            <td><a href="#" class="brd-rd4" id="remove-all">Remove All</a></td>
-                                                                        </tr>
                                                                     </table>
+                                                                    <a href="place-order.html" class="red-bg brd-rd4 place-order">Place Order</a>
+                                                                    <a href="#" class="brd-rd4 remove-all">Remove All</a>
                                                                 </div>
                                                             </div>
                                                             <div class="row restaurant-products">
@@ -530,20 +511,14 @@
                                                                 <div class="total-block">
                                                                     <table>
                                                                         <tr>
-                                                                            <th>Subtotal : </th>
-                                                                            <td>$30.00</td>
-                                                                        
-                                                                        </tr>
-                                                                        <tr>
                                                                             <th>Total : </th>
                                                                             <td>$30.00</td>
                                                                         
                                                                         </tr>
-                                                                        <tr>
-                                                                            <td><a href="#" class="red-bg brd-rd4" id="place-order">Place Order</a></td>
-                                                                            <td><a href="#" class="brd-rd4" id="remove-all">Remove All</a></td>
-                                                                        </tr>
+                                                                        
                                                                     </table>
+                                                                    <a href="place-order.html" class="red-bg brd-rd4 place-order">Place Order</a>
+                                                                            <a href="#" class="brd-rd4 remove-all">Remove All</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -658,7 +633,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Modal -->
+                                        <!-- Signout confirm Modal -->
                                         <div class="modal fade" id="signout" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                             <div class="modal-content">

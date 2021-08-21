@@ -119,7 +119,7 @@
                                             <li class="active"><a href="dashboard.html"><i class="fa fa-shopping-basket"></i> MY CART</a></li>
                                             <li><a href="#my-bookings"><i class="fa fa-file-text"></i>MY ORDERS</a></li>
                                             <li><a href="#account-settings"><i class="fa fa-cog"></i> ACCOUNT SETTINGS</a></li>
-                                            <li><a class="brd-rd3 sign-out-btn yellow-bg" href="#" title="" itemprop="url"><i class="fa fa-sign-out"></i> SIGN OUT</a></li>
+                                            <li><a class="brd-rd3 sign-out-btn yellow-bg" data-toggle="modal" data-target="#signout" href="#" title="" itemprop="url"><i class="fa fa-sign-out"></i> SIGN OUT</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#" title="" itemprop="url">Home</a></li>
                     <li class="breadcrumb-item"><a href="#" title="" itemprop="url">Orders</a></li>
-                    <li class="breadcrumb-item active">Order Details</li>
+                    <li class="breadcrumb-item active">Place Order</li>
                 </ol>
             </div>
         </div>
@@ -243,123 +243,144 @@
                             <div class="sec-box">
                                 <div class="dashboard-tabs-wrapper">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12 col-lg-4">
-                                            <div class="profile-sidebar brd-rd5 wow fadeIn" data-wow-delay="0.2s">
-                                                <div class="profile-sidebar-inner brd-rd5">
-                                                    <div class="user-info red-bg">
-                                                        <img class="brd-rd50"
-                                                            src="assets/images/resource/user-avatar.jpg"
-                                                            alt="user-avatar.jpg" itemprop="image">
-                                                        <div class="user-info-inner">
-                                                            <h5 itemprop="headline"><a href="#" title=""
-                                                                    itemprop="url">BUYER DEMO</a></h5>
-                                                            <span><a href="#" title=""
-                                                                    itemprop="url">dum3@chimpgroou.com</a></span>
-                                                            <a class="brd-rd3 sign-out-btn yellow-bg" href="#" title=""
-                                                                itemprop="url"><i class="fa fa-sign-out"></i> SIGN
-                                                                OUT</a>
+                                       <form action="">
+                                            <div class="col-md-6 col-sm-12 col-lg-6">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade in active" id="my-orders">
+                                                        <div class="tabs-wrp brd-rd5">
+                                                            <h4 itemprop="headline" style="margin-bottom: 15px;">Your Order</h4>
+                                                            <div class="statement-table booking-table">
+                                                                <table>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            
+                                                                            <th>DISH NAME</th>
+                                                                            <th>QTY</th>
+                                                                            <th>RESTAURANT</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="order-dish-name">
+                                                                                <h5 itemprop="headline"><a href="#" title=""
+                                                                                        itemprop="url">Lorem ipsum dolor sit amet consectetu
+                                                                                        </a></h5>
+                                                                            </td>
+                                                                            <td>2</td>
+                                                                            <td rowspan="2">Restaurant Name</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <h5 itemprop="headline"><a href="#" title=""
+                                                                                        itemprop="url" class="text-truncate">This is dish name ...
+                                                                                        </a></h5>
+                                                                            </td>
+                                                                            <td>2</td>
+                                                                            
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="total-block" style="background-color: white;">
+                                                                    <table class="checkout-price-table">
+                                                                        <tr>
+                                                                            <th>Subtotal : </th>
+                                                                            <td>$30.00</td>
+                                                                        
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Total : </th>
+                                                                            <td>$30.00</td>
+                                                                        
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                            
+                                                            </div>
                                                         </div>
+                                                        <div class="checkout-methods">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="radio" id="checkout-later" name="checkout-method" >
+                                                                        <label for="checkout-later">Check out on delivery</label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="radio" id="online-checkout" name="checkout-method" >
+                                                                        <label for="online-checkout">Online check out</label>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            
+                                                        </div>
+                                                        <div class="order-action">
+                                                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                                                <button type="button" class="btn primary-btn" id="back-to-order" style="margin-left: 30px;" onclick="window.location.href = 'dashboard.html'"><i class="fa fa-chevron-left"></i> Back to orders</button>
+                                                                <button class="btn primary-btn red-bg" id="cancel-order-btn" type="submit">Place Order</button>
+                                                            </div>
+                                                        </div>
+                                                        
                                                     </div>
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active"><a href="#my-cart" data-toggle="tab"><i
-                                                                    class="fa fa-shopping-basket"></i> MY CART</a></li>
-                                                        <li><a href="#my-orders" data-toggle="tab"><i
-                                                                    class="fa fa-file-text"></i>MY ORDERS</a></li>
-                                                        <li><a href="#account-settings" data-toggle="tab"><i
-                                                                    class="fa fa-cog"></i> ACCOUNT SETTINGS</a></li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-8 col-sm-12 col-lg-8">
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade in active" id="my-orders">
-                                                    <div class="tabs-wrp brd-rd5">
-                                                        <h4 itemprop="headline" style="margin-top:-10px; margin-bottom: 10px;">Order Details</h4>
-                                                        <div class="booking-table">
-                                                            <table class="table-bordered">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>ID</th>
-                                                                        <th>DISH NAME</th>
-                                                                        <th>QTY</th>
-                                                                        <th>RESTAURANT</th>
-                                                                        <th>STATUS</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td rowspan="2">#01234</td>
-                                                                        <td class="order-dish-name">
-                                                                            <h5 itemprop="headline"><a href="#" title=""
-                                                                                    itemprop="url">Lorem ipsum dolor sit amet consectetu
-                                                                                    </a></h5>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td rowspan="2">Restaurant Name</td>
-                                                                        <td rowspan="2"><span
-                                                                            class="brd-rd3 processing">Pending</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <h5 itemprop="headline"><a href="#" title=""
-                                                                                    itemprop="url" class="text-truncate">This is dish name ...
-                                                                                    </a></h5>
-                                                                        </td>
-                                                                        <td>2</td>   
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <div class="total-block" style="background-color: white;">
-                                                                <table class="checkout-price-table">
-                                                                    <tr>
-                                                                        <th>Subtotal : </th>
-                                                                        <td>$30.00</td>
-                                                                    
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Total : </th>
-                                                                        <td>$30.00</td>
-                                                                    
-                                                                    </tr>
-                                                                </table>
-                                                            </div>
-                                                            <div id="time-container">
-                                        
-                                                                <table id="order-time-table" class="table-bordered">
-                                                                    <tr>
-                                                                        <th>Order time: </th>
-                                                                        <td>20:40 - Aug 17,2017</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Estimated delivery amount: </th>
-                                                                        <td>Not yet</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Delivered time: </th>
-                                                                        <td>Not yet</td>
-                                                                    </tr>
-                                                                </table>
-                                                                
-                                                            </div>
-                                                            <div class="order-action" style="margin-top: 50px;">
-                                                                <button class="btn primary-btn" id="back-to-order" onclick="window.location.href = 'dashboard.html'"><i class="fa fa-chevron-left"></i> Back to orders</button>
-                                                                <button class="btn primary-btn red-bg" id="cancel-order-btn">Cancel this order</button>
-                                                            </div>
-                                                            <div class="cancel-order">
-                                                                <form action="#">
-                                                                    <div class="form-group">
-                                                                        <label for="cancel-reason">Reason of Cancelation: </label>
-                                                                        <textarea class="form-control" row="10" id="cancel-reason"></textarea>
+                                            <div class="col-md-6 col-sm-12 col-lg-6">
+                                            
+                                                <div class="order-action">
+                                                    <div class="place-order-bl">
+                                                        <div class="profile-info-form-wrap">
+                                                            <div class="profile-info-form">
+                                                                <div class="tabs-wrp row mrg20">
+                                                                    <h4 itemprop="headline">Billing Details</h4>
+                                                                    <div
+                                                                        class="col-md-12 col-sm-12 col-lg-12">
+                                                                        <label>Complete Name
+                                                                            <sup>*</sup></label>
+                                                                        <input class="brd-rd3" type="text"
+                                                                            placeholder="Enter Your Name">
                                                                     </div>
-                                                                    <button class="btn primary-btn red-bg" id="send-cancel" type="submit">Send</button>
-                                                                    <button class="btn primary-btn" id="back" type="button">Cancel</button>
-                                                                </form>
+                                                                    <div
+                                                                        class="col-md-12 col-sm-12 col-lg-12">
+                                                                        <label>Email Address
+                                                                            <sup>*</sup></label>
+                                                                        <input class="brd-rd3" type="email"
+                                                                            placeholder="Enter Your Email Address">
+                                                                    </div>
+                                                                    <div
+                                                                        class="col-md-12 col-sm-12 col-lg-12">
+                                                                        <label>Phone No <sup>*</sup></label>
+                                                                        <input class="brd-rd3" type="text"
+                                                                            placeholder="Enter Your Phone No">
+                                                                    </div>
+                                                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                                                        <label>Address <sup>*</sup></label>
+                                                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                                    </div>
+                                                                
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </form>
+                                        <!--Confirm signout Modal -->
+                                        <div class="modal fade" id="signout" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <!-- <h5 class="modal-title" id="exampleModalLabel">Sign Out Comfirm.</h5> -->
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                Do you really want to sign out ?
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                                <button type="button" class="btn red-bg" style="color: white;">Yes</button>
+                                                </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
